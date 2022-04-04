@@ -5,3 +5,55 @@
 html {
     font-family: 'Space Mono', monospace;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 1.3rem;
+    background-color: #f6F8ff;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.8rem;
+}
+
+h1 {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 39px;
+    /* identical to box height */
+}
+
+#screen_mode {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+#mode_word {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19px;
+    text-align: right;
+    letter-spacing: 2.5px;
+    margin-right: 0.5rem;
+    color: #4B6A9B;
+    position: relative;
+    top: 0.2rem;
+}
+
+#mode_img {
+    width: 20px;
+    height: 20px;
+}
