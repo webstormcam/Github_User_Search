@@ -2,6 +2,8 @@
     box-sizing: border-box;
 }
 
+
+
 html {
     font-family: 'Space Mono', monospace;
 }
@@ -67,10 +69,24 @@ h1 {
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-top: 2rem;
 }
+
+
+
 
 input {
     min-width: 327px;
     width: 100%;
     max-width: 730px;
+    border-radius: 1rem;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+    border: 1px solid #fff;
+    font-family: 'Space Mono', monospace;
+    padding-left: 3rem;
+    -webkit-box-shadow: -1px 6px 11px 0px rgba(0, 0, 0, 0.192);
+    box-shadow: -1px 6px 11px 0px rgba(0, 0, 0, 0.13);
+    position: relative;
+
 }
