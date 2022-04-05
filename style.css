@@ -92,7 +92,7 @@ input {
     padding-bottom: 1.3rem;
     border: 1px solid #fff;
     font-family: 'Space Mono', monospace;
-    padding-left: 3rem;
+    padding-left: 2.5rem;
     -webkit-box-shadow: -1px 6px 11px 0px rgba(0, 0, 0, 0.192);
     box-shadow: -1px 6px 11px 0px rgba(0, 0, 0, 0.13);
     font-style: normal;
@@ -107,15 +107,15 @@ input {
     position: absolute;
     width: 20px;
     height: 20px;
-    left: 1.2rem;
-    top: 1.3rem;
+    left: 0.9rem;
+    top: 1.5rem;
 }
 
 button {
     background-color: #0079FF;
     color: #fff;
     border-radius: 1rem;
-    padding: 0.9rem 1.2rem;
+    padding: 0.9rem 1rem;
     border: 1px solid #0079FF;
     position: absolute;
     right: 0.3rem;
