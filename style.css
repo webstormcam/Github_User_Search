@@ -25,7 +25,7 @@ header {
     align-items: center;
     justify-content: space-between;
     margin-top: 0.8rem;
-    max-width: 730px;
+    max-width: 573px;
     width: 100%;
 }
 
@@ -70,6 +70,14 @@ h1 {
     justify-content: center;
     width: 100%;
     margin-top: 2rem;
+    position: relative;
+}
+
+
+#input-holder {
+    width: 100%;
+    max-width: 573px;
+    position: relative;
 }
 
 
@@ -78,7 +86,7 @@ h1 {
 input {
     min-width: 327px;
     width: 100%;
-    max-width: 730px;
+    max-width: 573px;
     border-radius: 1rem;
     padding-top: 1.3rem;
     padding-bottom: 1.3rem;
@@ -87,6 +95,14 @@ input {
     padding-left: 3rem;
     -webkit-box-shadow: -1px 6px 11px 0px rgba(0, 0, 0, 0.192);
     box-shadow: -1px 6px 11px 0px rgba(0, 0, 0, 0.13);
-    position: relative;
 
+
+}
+
+.magnify {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 1.2rem;
+    top: 1.2rem;
 }
