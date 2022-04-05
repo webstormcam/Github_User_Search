@@ -133,6 +133,19 @@ button {
     -webkit-box-shadow: -1px 6px 11px 0px rgba(0, 0, 0, 0.192);
     box-shadow: -1px 6px 11px 0px rgba(0, 0, 0, 0.13);
     margin-top: 2rem;
+    padding: 1rem;
+}
+
+
+.img_name_birth {
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.names_birth {
+    margin-left: 1rem;
 }
 
 #user_icon {
