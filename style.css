@@ -95,6 +95,10 @@ input {
     padding-left: 3rem;
     -webkit-box-shadow: -1px 6px 11px 0px rgba(0, 0, 0, 0.192);
     box-shadow: -1px 6px 11px 0px rgba(0, 0, 0, 0.13);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 25px;
 
 
 }
@@ -104,5 +108,18 @@ input {
     width: 20px;
     height: 20px;
     left: 1.2rem;
-    top: 1.2rem;
+    top: 1.3rem;
+}
+
+button {
+    background-color: #0079FF;
+    color: #fff;
+    border-radius: 1rem;
+    padding: 0.9rem 1.2rem;
+    border: 1px solid #0079FF;
+    position: absolute;
+    right: 0.3rem;
+    top: 0.6rem;
+    font-weight: bold;
+    font-family: 'Space Mono', monospace;
 }
