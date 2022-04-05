@@ -9,8 +9,11 @@ html {
 body {
     display: flex;
     flex-direction: column;
+    width: 100%;
     padding: 1.3rem;
     background-color: #f6F8ff;
+    align-items: center;
+
 }
 
 
@@ -20,6 +23,8 @@ header {
     align-items: center;
     justify-content: space-between;
     margin-top: 0.8rem;
+    max-width: 730px;
+    width: 100%;
 }
 
 h1 {
@@ -56,4 +61,16 @@ h1 {
 #mode_img {
     width: 20px;
     height: 20px;
+}
+
+#input-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+input {
+    min-width: 327px;
+    width: 100%;
+    max-width: 730px;
 }
