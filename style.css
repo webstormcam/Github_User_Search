@@ -154,6 +154,14 @@ button {
     border-radius: 50%;
 }
 
+#user_AT_name {
+    color: #0079FF;
+}
+
+#birth {
+    color: #697C9A;
+}
+
 @media screen and (min-width:768px) {
     button {
         padding: 1rem 1.3rem;
