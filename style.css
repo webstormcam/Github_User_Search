@@ -25,7 +25,7 @@ header {
     align-items: center;
     justify-content: space-between;
     margin-top: 0.8rem;
-    max-width: 573px;
+    max-width: 327px;
     width: 100%;
 }
 
@@ -76,7 +76,7 @@ h1 {
 
 #input-holder {
     width: 100%;
-    max-width: 573px;
+    max-width: 327px;
     position: relative;
 }
 
@@ -86,7 +86,7 @@ h1 {
 input {
     min-width: 327px;
     width: 100%;
-    max-width: 573px;
+    max-width: 327px;
     border-radius: 1rem;
     padding-top: 1.3rem;
     padding-bottom: 1.3rem;
@@ -128,7 +128,7 @@ button {
 #user_information {
     display: flex;
     flex-direction: column;
-    max-width: 573px;
+    max-width: 327px;
     width: 100%;
     -webkit-box-shadow: -1px 6px 11px 0px rgba(0, 0, 0, 0.192);
     box-shadow: -1px 6px 11px 0px rgba(0, 0, 0, 0.13);
@@ -172,6 +172,34 @@ button {
 
     }
 
+    header {
+
+        max-width: 573px;
+        margin-top: 0rem;
+    }
+
+    #input-holder {
+
+        max-width: 573px;
+
+    }
+
+    input {
+
+        max-width: 573px;
+
+
+
+    }
+
+    #user_information {
+
+        max-width: 573px;
+
+    }
+
+
+
 
 
 
@@ -196,6 +224,12 @@ button {
         max-width: 730px;
 
 
+
+    }
+
+    #user_information {
+
+        max-width: 730px;
 
     }
 }
