@@ -154,8 +154,14 @@ button {
     border-radius: 50%;
 }
 
+#username {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
 #user_AT_name {
     color: #0079FF;
+    margin-bottom: 0.5rem;
 }
 
 #birth {
