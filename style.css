@@ -134,6 +134,8 @@ button {
     box-shadow: -1px 6px 11px 0px rgba(0, 0, 0, 0.13);
     margin-top: 2rem;
     padding: 1rem;
+    padding-top: 2rem;
+
 }
 
 
@@ -166,6 +168,16 @@ button {
 
 #birth {
     color: #697C9A;
+}
+
+#user_story_section {
+    margin-top: 3rem;
+}
+
+#userstory {
+    font-size: 13px;
+    line-height: 25px;
+    color: #4B6A9B;
 }
 
 @media screen and (min-width:768px) {
