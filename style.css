@@ -136,6 +136,7 @@ button {
     margin-top: 2rem;
     padding: 1rem;
     padding-top: 2rem;
+    border-radius: 1rem;
 
 }
 
@@ -165,10 +166,12 @@ button {
 #user_AT_name {
     color: #0079FF;
     margin-bottom: 0.5rem;
+    font-size: 13px;
 }
 
 #birth {
     color: #697C9A;
+    font-size: 13px;
 }
 
 #user_story_section {
@@ -225,6 +228,12 @@ button {
 
     }
 
+    #user_icon {
+        width: 117px;
+        height: 117px;
+
+    }
+
 
 
 
@@ -261,3 +270,4 @@ button {
         max-width: 730px;
 
     }
+}
