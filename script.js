@@ -6,7 +6,6 @@ let user_AT_name = document.getElementById('user_AT_name');
 let join = document.getElementById('birth');
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 let user_story = document.getElementById('userstory');
-let user_search = document.getElementById('user_search');
 let user_button = document.getElementById('user_button');
 
 
@@ -33,10 +32,13 @@ console.log(out)
 })
 .catch(err => { throw err });
 }
+
 user_button.addEventListener('click',function(){
-    user_search = user_search.value;
+    let user_search = document.getElementById('user_search').value;
     url = `https://api.github.com/users/${user_search}`
+    console.log(user_search)
     runSearch();
+
 })
 
 
