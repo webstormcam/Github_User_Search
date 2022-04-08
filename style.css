@@ -184,6 +184,38 @@ button {
     color: #4B6A9B;
 }
 
+#projects_section {
+    background-color: #97979710;
+    border-radius: 1rem;
+    margin-top: 1.5rem;
+}
+
+.repos_followers_following {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+h2 {
+    font-size: 11px;
+    color: #4B6A9B;
+    margin-bottom: 0.9rem;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.stats p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
 @media screen and (min-width:768px) {
     button {
         padding: 1rem 1.3rem;
@@ -233,6 +265,8 @@ button {
         height: 117px;
 
     }
+
+
 
 
 

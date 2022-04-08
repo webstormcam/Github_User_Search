@@ -7,6 +7,9 @@ let join = document.getElementById('birth');
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 let user_story = document.getElementById('userstory');
 let user_button = document.getElementById('user_button');
+let repos = document.getElementById('repos');
+let followers = document.getElementById('followers');
+let following = document.getElementById('following');
 
 
 function runSearch(){
@@ -23,6 +26,9 @@ let year = dateObj.getUTCFullYear();
 let month_name = months[month]
 let newDate = ` Joined ${day} ${month_name} ${year}`;
 join.innerHTML = newDate
+repos.innerHTML = out.public_repos;
+followers.innerHTML = out.followers;
+following.innerHTML = out.following;
 if(out.bio === null){
 user_story.innerHTML ='This profile has no bio'
 } else{
