@@ -10,6 +10,11 @@ let user_button = document.getElementById('user_button');
 let repos = document.getElementById('repos');
 let followers = document.getElementById('followers');
 let following = document.getElementById('following');
+let locationgps = document.getElementById('location')
+let site = document.getElementById('link');
+let bird = document.getElementById('twitter');
+let bird_logo = document.getElementById('bird_logo');
+let work = document.getElementById('company')
 
 
 function runSearch(){
@@ -29,11 +34,24 @@ join.innerHTML = newDate
 repos.innerHTML = out.public_repos;
 followers.innerHTML = out.followers;
 following.innerHTML = out.following;
+locationgps.innerHTML = out.location;
+site.innerHTML = `<a class ='links' href=${out.blog}>${out.blog}</a>`;
+work.innerHTML =out.company;
 if(out.bio === null){
 user_story.innerHTML ='This profile has no bio'
 } else{
     user_story.innerHTML = out.bio;
 }
+if(out.twitter_username === null){
+    bird.innerHTML ='Not available';
+    bird.style.color='#808080'
+    bird_logo.src ='imgs/icon-twitter - Grey.svg'
+    } else{
+        bird.innerHTML = `<a class='links' href='https://twitter.com/${out.twitter_username}'>@${out.twitter_username}</a>`;
+        bird_logo.src ='imgs/icon-twitter.svg'
+      
+        bird.style.color='#4B6A9B'
+    }
 console.log(out)
 })
 .catch(err => { throw err });

@@ -63,7 +63,10 @@ h1 {
 #mode_img {
     width: 20px;
     height: 20px;
+
 }
+
+
 
 #input-section {
     display: flex;
@@ -134,7 +137,7 @@ button {
     -webkit-box-shadow: -1px 6px 11px 0px rgba(0, 0, 0, 0.192);
     box-shadow: -1px 6px 11px 0px rgba(0, 0, 0, 0.13);
     margin-top: 2rem;
-    padding: 1rem;
+    padding: 1.5rem;
     padding-top: 2rem;
     border-radius: 1rem;
 
@@ -212,6 +215,39 @@ h2 {
 .stats p {
     font-size: 16px;
     font-weight: bold;
+}
+
+#tag_section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.tag_prop {
+    display: flex;
+    flex-direction: column;
+}
+
+.tag {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.tag p {
+    margin-left: 1rem;
+    font-size: 13px;
+    color: #4B6A9B;
+}
+
+.links {
+    color: #4B6A9B;
+    text-decoration: none;
+}
+
+.links:hover {
+    text-decoration: underline;
 }
 
 
