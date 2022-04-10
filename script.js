@@ -10,11 +10,14 @@ let user_button = document.getElementById('user_button');
 let repos = document.getElementById('repos');
 let followers = document.getElementById('followers');
 let following = document.getElementById('following');
-let locationgps = document.getElementById('location')
+let locationgps = document.getElementById('location');
+let location_logo = document.getElementById('location_logo');
 let site = document.getElementById('link');
 let bird = document.getElementById('twitter');
 let bird_logo = document.getElementById('bird_logo');
-let work = document.getElementById('company')
+let work = document.getElementById('company');
+let site_logo = document.getElementById('link_logo');
+let company_logo = document.getElementById('company_logo');
 
 
 function runSearch(){
@@ -34,13 +37,50 @@ join.innerHTML = newDate
 repos.innerHTML = out.public_repos;
 followers.innerHTML = out.followers;
 following.innerHTML = out.following;
-locationgps.innerHTML = out.location;
-site.innerHTML = `<a class ='links' href=${out.blog}>${out.blog}</a>`;
-work.innerHTML =out.company;
+
+if(out.location === null){
+    locationgps.innerHTML = 'Not available';
+    location_logo.src = 'imgs/icon-location-GREY.svg';
+    locationgps.style.color='#808080';
+
+} else{
+    locationgps.innerHTML = out.location;
+    location_logo.src ='imgs/icon-location.svg';
+    locationgps.style.color ='#4B6A9B';
+}
+
+
+
+
+if(out.blog === ""){
+    site.innerHTML ='Not available';
+    site_logo.src = 'imgs/icon-website-GREY.svg'
+    link.style.color ='#808080'
+
+}else{
+    site.innerHTML = `<a class ='links' href=${out.blog}>${out.blog}</a>`;
+    site_logo.src = 'imgs/icon-website.svg';
+    link.style.color ='#4B6A9B'
+}
+
+if(out.company===null){
+    work.innerHTML ='Not available';
+    work.style.color ='#808080';
+    company_logo.src = 'imgs/icon-company-GREY.svg'
+
+} else{
+    work.innerHTML =out.company;
+    company_logo.src = 'imgs/icon-company.svg'
+    work.style.color ='#4B6A9B';
+}
+
+
 if(out.bio === null){
 user_story.innerHTML ='This profile has no bio'
+user_story.style.color='#808080'
 } else{
     user_story.innerHTML = out.bio;
+    user_story.style.color='#4B6A9B'
 }
 if(out.twitter_username === null){
     bird.innerHTML ='Not available';
