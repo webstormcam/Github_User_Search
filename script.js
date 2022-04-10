@@ -30,7 +30,7 @@ fetch(url)
          results_neg.style.display ='block';
     } else{
 
-        results_neg.style.display ='none';
+results_neg.style.display ='none';
 user_icon.src= out.avatar_url;
 user_name.innerHTML = out.name;
 user_AT_name.innerHTML = `@${out.login}`;

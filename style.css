@@ -256,7 +256,7 @@ h2 {
     font-size: 13px;
     right: 6rem;
     top: 1.7rem;
-    display: block;
+    display: none;
     font-weight: bold;
 }
 
@@ -315,7 +315,7 @@ h2 {
     #nope {
 
         right: 7rem;
-        top: 0.9rem;
+        top: 1.7rem;
 
     }
 
