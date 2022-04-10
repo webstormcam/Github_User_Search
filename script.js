@@ -18,12 +18,19 @@ let bird_logo = document.getElementById('bird_logo');
 let work = document.getElementById('company');
 let site_logo = document.getElementById('link_logo');
 let company_logo = document.getElementById('company_logo');
+let results_neg = document.getElementById('nope');
 
 
 function runSearch(){
 fetch(url)
 .then(res => res.json())
 .then((out) => {
+    if(out.message ==='Not Found'){
+        console.log('stopped')
+         results_neg.style.display ='block';
+    } else{
+
+        results_neg.style.display ='none';
 user_icon.src= out.avatar_url;
 user_name.innerHTML = out.name;
 user_AT_name.innerHTML = `@${out.login}`;
@@ -92,13 +99,16 @@ if(out.twitter_username === null){
       
         bird.style.color='#4B6A9B'
     }
+    }
 console.log(out)
 })
 .catch(err => { throw err });
 }
 
+
 user_button.addEventListener('click',function(){
     let user_search = document.getElementById('user_search').value;
+
     url = `https://api.github.com/users/${user_search}`
     console.log(user_search)
     runSearch();
