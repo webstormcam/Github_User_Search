@@ -323,6 +323,25 @@ h2 {
 
     }
 
+    /* .tag_prop {
+        flex-direction: row;
+        justify-content: space-around;
+
+    } */
+
+    #tag_section {
+
+        flex-direction: row;
+        justify-content: space-between;
+        width: 450px;
+
+    }
+
+    .stats {
+        text-align: left;
+    }
+
+
 
 
 
