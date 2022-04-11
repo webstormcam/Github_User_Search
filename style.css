@@ -178,7 +178,7 @@ button {
 }
 
 #user_story_section {
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 #userstory {
@@ -336,6 +336,16 @@ h2 {
         width: 450px;
 
     }
+
+    #user_information {
+        padding: 2.5rem;
+
+    }
+
+
+
+
+
 
     .stats {
         text-align: left;
