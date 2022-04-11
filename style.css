@@ -260,6 +260,10 @@ h2 {
     font-weight: bold;
 }
 
+#screen_mode {
+    cursor: pointer;
+}
+
 
 
 @media screen and (min-width:768px) {

@@ -19,6 +19,9 @@ let work = document.getElementById('company');
 let site_logo = document.getElementById('link_logo');
 let company_logo = document.getElementById('company_logo');
 let results_neg = document.getElementById('nope');
+let mode_switch = document.getElementById('screen_mode');
+let mode_word = document.getElementById('mode_word')
+let mode_img = document.getElementById('mode_img')
 
 
 function runSearch(){
@@ -113,10 +116,23 @@ user_button.addEventListener('click',function(){
     console.log(user_search)
     runSearch();
 
-})
+});
 
 
 runSearch();
+
+
+
+
+mode_switch.addEventListener('click',function(){
+if(mode_word.innerHTML ==='DARK'){
+    mode_word.innerHTML ='LIGHT'
+    mode_img.src = 'imgs/icon-sun.svg'
+} else if(mode_word.innerHTML==='LIGHT'){
+    mode_word.innerHTML='DARK'
+    mode_img.src = 'imgs/icon-moon.svg'
+}
+});
 
 
 
