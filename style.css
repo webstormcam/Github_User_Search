@@ -359,11 +359,43 @@ h2 {
 
 
 
+    .names_birth {
+        margin-left: 2rem;
+        position: relative;
+        top: 1rem;
+    }
 
+    #username {
+        font-size: 26px;
+    }
 
+    #user_AT_name {
+        font-size: 16px;
+    }
 
+    #birth {
+        font-size: 15px;
+    }
 
+    #userstory {
+        font-size: 15px;
+    }
 
+    h2 {
+        font-size: 13px;
+    }
+
+    .stats p {
+        font-size: 22px;
+    }
+
+    .tag p {
+        font-size: 15px;
+    }
+
+    input {
+        font-size: 18px;
+    }
 
 }
 
