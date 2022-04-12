@@ -24,7 +24,9 @@ let mode_word = document.getElementById('mode_word')
 let mode_img = document.getElementById('mode_img')
 let body = document.getElementById('holder');
 let logo= document.getElementById('logo');
-let user_info = document.getElementById('user_information')
+let user_info = document.getElementById('user_information');
+let h2s = document.getElementsByTagName('h2');
+let stats = document.getElementsByClassName('num')
 
 
 function runSearch(){
@@ -133,6 +135,21 @@ if(mode_word.innerHTML ==='DARK'){
     mode_word.style.color ='#fff'
     mode_img.src = 'imgs/icon-sun.svg'
     logo.style.color ='#fff'
+    user_name.style.color='#fff'
+    join.style.color ='#fff'
+    user_story.style.color="#fff"
+    user_search.style.backgroundColor='rgb(30, 42, 71)';
+    user_search.style.border='1px solid rgb(30, 42, 71)';
+    user_search.style.color='#fff'
+    document.querySelector('input[type=text]').style.setProperty('--c','#fff')
+    for(var i = 0, length = stats.length; i < length; i++){
+        
+        stats[i].style.color='#fff'
+    }
+    for(var i = 0, length = h2s.length; i < length; i++){
+        
+        h2s[i].style.color='#fff'
+    }
     body.style.backgroundColor='#141D2F'
     user_info.style.backgroundColor='#1E2A47'
 } else if(mode_word.innerHTML==='LIGHT'){
@@ -140,6 +157,21 @@ if(mode_word.innerHTML ==='DARK'){
     mode_img.src = 'imgs/icon-moon.svg'
     mode_word.style.color ='#4B6A9B'
     logo.style.color='black'
+    user_name.style.color='black'
+    join.style.color='#697C9A'
+    user_story.style.color="rgb(128, 128, 128)"
+    user_search.style.backgroundColor='#fff';
+    user_search.style.border='1px solid #fff';
+    user_search.style.color='black'
+    document.querySelector('input[type=text]').style.setProperty('--c','grey')
+    for(var i = 0, length = stats.length; i < length; i++){
+        
+        stats[i].style.color='black'
+    }
+    for(var i = 0, length = h2s.length; i < length; i++){
+        
+        h2s[i].style.color='#141D2F'
+    }
     user_info.style.backgroundColor='#fff'
     body.style.backgroundColor='#fff'
 }
