@@ -95,7 +95,11 @@ user_story.innerHTML ='This profile has no bio'
 user_story.style.color='#808080'
 } else{
     user_story.innerHTML = out.bio;
-    user_story.style.color='#4B6A9B'
+    if(mode_word.innerHTML ==='DARK'){
+        user_story.style.color='#fff'
+    } else{
+        user_story.style.color='#4B6A9B'
+    }
 }
 if(out.twitter_username === null){
     bird.innerHTML ='Not available';
