@@ -92,14 +92,9 @@ if(out.company===null){
 
 if(out.bio === null){
 user_story.innerHTML ='This profile has no bio'
-user_story.style.color='#808080'
+
 } else{
     user_story.innerHTML = out.bio;
-    if(mode_word.innerHTML ==='DARK'){
-        user_story.style.color='#fff'
-    } else{
-        user_story.style.color='#4B6A9B'
-    }
 }
 if(out.twitter_username === null){
     bird.innerHTML ='Not available';
@@ -163,7 +158,7 @@ if(mode_word.innerHTML ==='DARK'){
     logo.style.color='black'
     user_name.style.color='black'
     join.style.color='#697C9A'
-    user_story.style.color="rgb(128, 128, 128)"
+    user_story.style.color="#4B6A9B"
     user_search.style.backgroundColor='#fff';
     user_search.style.border='1px solid #fff';
     user_search.style.color='black'
