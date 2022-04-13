@@ -143,6 +143,11 @@ button {
 
 }
 
+.alldesc {
+    display: flex;
+    flex-direction: column;
+}
+
 
 .img_name_birth {
     display: flex;
