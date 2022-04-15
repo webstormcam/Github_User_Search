@@ -1,6 +1,7 @@
 let user ='octocat'
 let url = `https://api.github.com/users/octocat`;
 let user_icon = document.getElementById('user_icon');
+let user_icon_large = document.getElementById('user_icon_large');
 let user_name = document.getElementById('username');
 let user_AT_name = document.getElementById('user_AT_name');
 let join = document.getElementById('birth');
@@ -40,6 +41,7 @@ fetch(url)
 
 results_neg.style.display ='none';
 user_icon.src= out.avatar_url;
+user_icon_large.src = out.avatar_url;
 user_name.innerHTML = out.name;
 user_AT_name.innerHTML = `@${out.login}`;
 let dateObj = new Date(out.created_at);

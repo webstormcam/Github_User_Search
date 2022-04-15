@@ -166,6 +166,9 @@ button {
     border-radius: 50%;
 }
 
+
+
+
 #username {
     font-weight: bold;
     margin-bottom: 0.5rem;
@@ -271,6 +274,14 @@ h2 {
 
 ::placeholder {
     color: var(--c, grey)
+}
+
+.large {
+    display: none;
+}
+
+.small {
+    display: block;
 }
 
 
@@ -429,6 +440,38 @@ h2 {
     #user_information {
 
         max-width: 730px;
+        display: flex;
+        flex-direction: row;
 
     }
+
+    .alldesc {
+        width: 480px;
+        margin-left: 2rem;
+    }
+
+    .small {
+        display: none;
+    }
+
+    .large {
+        display: block;
+    }
+
+    .names_birth {
+        margin-left: 0rem;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    #user_icon_large {
+        width: 117px;
+        height: 117px;
+        border-radius: 50%;
+    }
+
+
 }
