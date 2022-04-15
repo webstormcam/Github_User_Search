@@ -62,8 +62,9 @@ if(out.location === null){
 
 } else{
     locationgps.innerHTML = out.location;
-    location_logo.src ='imgs/icon-location.svg';
-    locationgps.style.color ='#4B6A9B';
+    locationgps.style.color='#4B6A9B';
+    location_logo.src='imgs/icon-location.svg'
+    
 }
 
 
@@ -82,7 +83,7 @@ if(out.blog === ""){
 
 if(out.company===null){
     work.innerHTML ='Not available';
-    work.style.color ='#808080';
+    work.style.color ='#808080'; 
     company_logo.src = 'imgs/icon-company-GREY.svg'
 
 } else{
@@ -100,7 +101,7 @@ user_story.innerHTML ='This profile has no bio'
 }
 if(out.twitter_username === null){
     bird.innerHTML ='Not available';
-    bird.style.color='#808080'
+    bird.style.color='#808080';
     bird_logo.src ='imgs/icon-twitter - Grey.svg'
     } else{
         bird.innerHTML = `<a class='links' href='https://twitter.com/${out.twitter_username}'>@${out.twitter_username}</a>`;
@@ -142,6 +143,8 @@ if(mode_word.innerHTML ==='DARK'){
     user_search.style.backgroundColor='rgb(30, 42, 71)';
     user_search.style.border='1px solid rgb(30, 42, 71)';
     user_search.style.color='#fff'
+  
+ 
     document.querySelector('input[type=text]').style.setProperty('--c','#fff')
     for(var i = 0, length = stats.length; i < length; i++){
         
@@ -153,6 +156,7 @@ if(mode_word.innerHTML ==='DARK'){
     }
     body.style.backgroundColor='#141D2F'
     user_info.style.backgroundColor='#1E2A47'
+  
 } else if(mode_word.innerHTML==='LIGHT'){
     mode_word.innerHTML='DARK'
     mode_img.src = 'imgs/icon-moon.svg'
@@ -175,6 +179,7 @@ if(mode_word.innerHTML ==='DARK'){
     }
     user_info.style.backgroundColor='#fff'
     body.style.backgroundColor='#fff'
+  
 }
 });
 
