@@ -106,8 +106,15 @@ if(out.twitter_username === null){
     } else{
         bird.innerHTML = `<a class='links' href='https://twitter.com/${out.twitter_username}'>@${out.twitter_username}</a>`;
         bird_logo.src ='imgs/icon-twitter.svg'
-      
-        bird.style.color='#4B6A9B'
+        if(mode_word.innerHTML ==='LIGHT'){
+            bird.style.color='#4B6A9B'
+            bird_logo.src ='imgs/icon-twitter-white.svg'
+            console.log('is white')
+        } else if(mode_word.innerHTML ==='DARK'){
+            bird.style.color='#4B6A9B' 
+            bird_logo.src ='imgs/icon-twitter.svg'
+        }
+
     }
     }
 console.log(out)
@@ -143,6 +150,20 @@ if(mode_word.innerHTML ==='DARK'){
     user_search.style.backgroundColor='rgb(30, 42, 71)';
     user_search.style.border='1px solid rgb(30, 42, 71)';
     user_search.style.color='#fff'
+    if(bird.innerHTML==='Not available'){
+        bird.style.color='#808080';
+        bird_logo.src ='imgs/icon-twitter - Grey.svg';
+    } else if(bird.innerHTML !=='Not available'){
+        bird_logo.src ='imgs/icon-twitter-white.svg';
+        bird.style.color='#fff'
+       
+    }
+
+
+
+
+
+
   
  
     document.querySelector('input[type=text]').style.setProperty('--c','#fff')
@@ -156,8 +177,8 @@ if(mode_word.innerHTML ==='DARK'){
     }
     body.style.backgroundColor='#141D2F'
     user_info.style.backgroundColor='#1E2A47'
-  
-} else if(mode_word.innerHTML==='LIGHT'){
+   
+    } else if(mode_word.innerHTML==='LIGHT'){
     mode_word.innerHTML='DARK'
     mode_img.src = 'imgs/icon-moon.svg'
     mode_word.style.color ='#4B6A9B'
@@ -168,6 +189,20 @@ if(mode_word.innerHTML ==='DARK'){
     user_search.style.backgroundColor='#fff';
     user_search.style.border='1px solid #fff';
     user_search.style.color='black'
+
+    if(bird.innerHTML==='Not available'){
+        bird.style.color='#808080';
+    } else if(bird.innerHTML !=='Not available'){
+        bird.style.color='#fff';
+        bird_logo.src ='imgs/icon-twitter-white.svg';
+        console.log('bloop')
+    }
+
+
+
+
+
+
     document.querySelector('input[type=text]').style.setProperty('--c','grey')
     for(var i = 0, length = stats.length; i < length; i++){
         
@@ -181,6 +216,13 @@ if(mode_word.innerHTML ==='DARK'){
     body.style.backgroundColor='#fff'
   
 }
+
+
+
+
+
+
+
 });
 
 
