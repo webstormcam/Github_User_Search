@@ -79,6 +79,8 @@ if(out.location === null){
 
 if(out.blog === ""){
     web_link.innerHTML ='Not available';
+    web_link.href ='#'
+    web_link.style.textDecoration='none'
     site_logo.src = 'imgs/icon-website-GREY.svg'
     web_link.style.color ='#808080'
 
@@ -123,6 +125,8 @@ if(out.twitter_username === null){
     twit_link.innerHTML ='Not available';
     twit_link.style.color='#808080';
     bird_logo.src ='imgs/icon-twitter - Grey.svg'
+    twit_link.href='#';
+    twit_link.style.textDecoration='none'
     } else{
         twit_link.href = `https://twitter.com/${out.twitter_username}`;
         twit_link.innerHTML=`@${out.twitter_username}`;
