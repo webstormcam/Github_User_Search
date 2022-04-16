@@ -93,8 +93,14 @@ if(out.company===null){
 
 } else{
     work.innerHTML =out.company;
-    company_logo.src = 'imgs/icon-company.svg'
-    work.style.color ='#4B6A9B';
+    if(mode_word.innerHTML ==='DARK'){
+        work.style.color='#4B6A9B';
+        company_logo.src='imgs/icon-company.svg'
+    } else{
+        work.style.color='#fff';
+        company_logo.src='imgs/icon-company-white.svg'
+    }
+  
 }
 
 
@@ -157,6 +163,14 @@ if(mode_word.innerHTML ==='DARK'){
         location_logo.src='imgs/icon-location-white.svg'
     }
 
+    if(work.innerHTML ==='Not available'){
+        company_logo.src = 'imgs/icon-company-GREY.svg';
+        work.style.color='#808080';
+    } else{
+        work.style.color='#fff';
+        company_logo.src='imgs/icon-company-white.svg'
+    }
+
 
 
 
@@ -194,6 +208,14 @@ if(mode_word.innerHTML ==='DARK'){
     } else{
         locationgps.style.color='#4B6A9B';
         location_logo.src='imgs/icon-location.svg'
+    }
+
+    if(work.innerHTML ==='Not available'){
+        company_logo.src = 'imgs/icon-company-GREY.svg';
+        work.style.color='#808080';
+    } else{
+        work.style.color='#4B6A9B';
+        company_logo.src='imgs/icon-company.svg'
     }
 
     
