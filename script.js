@@ -125,7 +125,7 @@ user_story.innerHTML ='This profile has no bio'
 if(out.twitter_username === null){
     twit_link.innerHTML ='Not available';
     twit_link.style.color='#808080';
-    bird_logo.src ='imgs/icon-twitter - Grey.svg'
+    bird_logo.src ='imgs/icon-twitter-grey.svg'
     twit_link.href='#';
     twit_link.style.textDecoration='none'
     twitter.classList.remove('linkon');
@@ -196,7 +196,7 @@ if(mode_word.innerHTML ==='DARK'){
     }
 
     if(twit_link.innerHTML ==='Not available'){
-        bird_logo.src = 'imgs/icon-twitter - GREY.svg';
+        bird_logo.src = 'imgs/icon-twitter-grey.svg';
       
     } else{
         bird_logo.src = 'imgs/icon-twitter-white.svg';
@@ -261,7 +261,7 @@ if(mode_word.innerHTML ==='DARK'){
     }
 
     if(twit_link.innerHTML ==='Not available'){
-        bird_logo.src = 'imgs/icon-twitter - GREY.svg';
+        bird_logo.src = 'imgs/icon-twitter-grey.svg';
       
     } else{
         bird_logo.src = 'imgs/icon-twitter.svg';
