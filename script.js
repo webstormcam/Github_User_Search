@@ -80,17 +80,18 @@ if(out.location === null){
 if(out.blog === ""){
     web_link.innerHTML ='Not available';
     web_link.href ='#'
-    web_link.style.textDecoration='none'
     site_logo.src = 'imgs/icon-website-GREY.svg'
     web_link.style.color ='#808080'
+    web_link.classList.remove('linkon');
 
 }else{
     web_link.href=`${out.blog}`;
     web_link.innerHTML=`${out.blog}`
     web_link.style.color ='#4B6A9B'
+    web_link.classList.add('linkon');
     if(mode_word.innerHTML ==='DARK'){
         web_link.style.color ='#4B6A9B'
-        site_logo.src='imgs/icon-website.svg'
+        site_logo.src='imgs/icon-website.svg';
     } else{
         web_link.style.color='#fff'
         site_logo.src='imgs/icon-website-white.svg'
@@ -127,10 +128,11 @@ if(out.twitter_username === null){
     bird_logo.src ='imgs/icon-twitter - Grey.svg'
     twit_link.href='#';
     twit_link.style.textDecoration='none'
+    twitter.classList.remove('linkon');
     } else{
         twit_link.href = `https://twitter.com/${out.twitter_username}`;
         twit_link.innerHTML=`@${out.twitter_username}`;
-
+        twitter.classList.add('linkon');
        twit_link.style.color='#4B6A9B'
        if(mode_word.innerHTML ==='DARK'){
         bird_logo.src='imgs/icon-twitter.svg'

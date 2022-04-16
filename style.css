@@ -288,6 +288,16 @@ h2 {
     text-decoration: none;
 }
 
+a {
+    text-decoration: none;
+}
+
+.linkon:hover {
+    text-decoration: underline;
+}
+
+
+
 
 
 @media screen and (min-width:768px) {
