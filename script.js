@@ -27,7 +27,9 @@ let body = document.getElementById('holder');
 let logo= document.getElementById('logo');
 let user_info = document.getElementById('user_information');
 let h2s = document.getElementsByTagName('h2');
-let stats = document.getElementsByClassName('num')
+let stats = document.getElementsByClassName('num');
+let twit_link = document.getElementById('twit_link');
+let web_link = document.getElementById('web_link');
 
 
 function runSearch(){
@@ -76,14 +78,21 @@ if(out.location === null){
 
 
 if(out.blog === ""){
-    site.innerHTML ='Not available';
+    web_link.innerHTML ='Not available';
     site_logo.src = 'imgs/icon-website-GREY.svg'
-    link.style.color ='#808080'
+    web_link.style.color ='#808080'
 
 }else{
-    site.innerHTML = `<a class ='links' href=${out.blog}>${out.blog}</a>`;
-    site_logo.src = 'imgs/icon-website.svg';
-    link.style.color ='#4B6A9B'
+    web_link.href=`${out.blog}`;
+    web_link.innerHTML=`${out.blog}`
+    web_link.style.color ='#4B6A9B'
+    if(mode_word.innerHTML ==='DARK'){
+        web_link.style.color ='#4B6A9B'
+        site_logo.src='imgs/icon-website.svg'
+    } else{
+        web_link.style.color='#fff'
+        site_logo.src='imgs/icon-website-white.svg'
+    }
 }
 
 if(out.company===null){
@@ -111,13 +120,22 @@ user_story.innerHTML ='This profile has no bio'
     user_story.innerHTML = out.bio;
 }
 if(out.twitter_username === null){
-    bird.innerHTML ='Not available';
-    bird.style.color='#808080';
+    twit_link.innerHTML ='Not available';
+    twit_link.style.color='#808080';
     bird_logo.src ='imgs/icon-twitter - Grey.svg'
     } else{
-        bird.innerHTML = `<a class='links' href='https://twitter.com/${out.twitter_username}'>@${out.twitter_username}</a>`;
-        bird_logo.src ='imgs/icon-twitter.svg'
-       bird.style.color='#4B6A9B'
+        twit_link.href = `https://twitter.com/${out.twitter_username}`;
+        twit_link.innerHTML=`@${out.twitter_username}`;
+
+       twit_link.style.color='#4B6A9B'
+       if(mode_word.innerHTML ==='DARK'){
+        bird_logo.src='imgs/icon-twitter.svg'
+        twit_link.style.color='#4B6A9B';
+        
+    } else{
+        bird_logo.src='imgs/icon-twitter-white.svg'
+        twit_link.style.color='#fff';
+    }
 
     }
     }
@@ -171,6 +189,24 @@ if(mode_word.innerHTML ==='DARK'){
         company_logo.src='imgs/icon-company-white.svg'
     }
 
+    if(twit_link.innerHTML ==='Not available'){
+        bird_logo.src = 'imgs/icon-twitter - GREY.svg';
+      
+    } else{
+        bird_logo.src = 'imgs/icon-twitter-white.svg';
+        twit_link.style.color='#fff';
+    }
+
+    if(web_link.innerHTML==='Not available'){
+        site_logo.src = 'imgs/icon-website-GREY.svg'
+        web_link.style.color='#808080'
+    } else{
+        site_logo.src = 'imgs/icon-website-white.svg'
+        web_link.style.color='#fff'
+    }
+
+
+
 
 
 
@@ -216,6 +252,22 @@ if(mode_word.innerHTML ==='DARK'){
     } else{
         work.style.color='#4B6A9B';
         company_logo.src='imgs/icon-company.svg'
+    }
+
+    if(twit_link.innerHTML ==='Not available'){
+        bird_logo.src = 'imgs/icon-twitter - GREY.svg';
+      
+    } else{
+        bird_logo.src = 'imgs/icon-twitter.svg';
+        twit_link.style.color='#4B6A9B';
+    }
+
+    if(web_link.innerHTML==='Not available'){
+        site_logo.src = 'imgs/icon-website-GREY.svg'
+        web_link.style.color='#808080'
+    } else{
+        site_logo.src = 'imgs/icon-website.svg'
+        web_link.style.color='#4B6A9B'
     }
 
     
