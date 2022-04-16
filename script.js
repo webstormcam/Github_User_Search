@@ -62,8 +62,13 @@ if(out.location === null){
 
 } else{
     locationgps.innerHTML = out.location;
+    if(mode_word.innerHTML ==='DARK'){
     locationgps.style.color='#4B6A9B';
     location_logo.src='imgs/icon-location.svg'
+} else{
+    locationgps.style.color='#fff';
+    location_logo.src='imgs/icon-location-white.svg'
+}
     
 }
 
@@ -143,7 +148,13 @@ if(mode_word.innerHTML ==='DARK'){
     user_search.style.backgroundColor='rgb(30, 42, 71)';
     user_search.style.border='1px solid rgb(30, 42, 71)';
     user_search.style.color='#fff'
-    
+    if(locationgps.innerHTML ==='Not available'){
+        location_logo.src = 'imgs/icon-location-GREY.svg';
+        locationgps.style.color='#808080';
+    } else{
+        locationgps.style.color='#fff';
+        location_logo.src='imgs/icon-location-white.svg'
+    }
 
 
 
@@ -175,6 +186,14 @@ if(mode_word.innerHTML ==='DARK'){
     user_search.style.backgroundColor='#fff';
     user_search.style.border='1px solid #fff';
     user_search.style.color='black'
+    
+    if(locationgps.innerHTML ==='Not available'){
+        location_logo.src = 'imgs/icon-location-GREY.svg';
+        locationgps.style.color='#808080';
+    } else{
+        locationgps.style.color='#4B6A9B';
+        location_logo.src='imgs/icon-location.svg'
+    }
 
     
 
